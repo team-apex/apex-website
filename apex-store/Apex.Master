@@ -9,7 +9,6 @@
     <script src="Scripts/jquery-2.1.1.js"></script>
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <link href="Content/font-awesome.min.css" rel="stylesheet" />
-    <!-- Latest compiled and minified JavaScript -->
     <script src="Scripts/bootstrap.min.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -26,7 +25,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Apex Cycling</a>
+      <a class="navbar-brand" href="#Index">Apex Cycling</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->

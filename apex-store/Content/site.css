@@ -4,8 +4,20 @@
     src: url('../fonts/Track.otf') format('opentype');
 }
 
+body {
+    font-family: 'Arial'
+}
+
+h1 {
+    font-family: 'Track', 'Arial', 'Calibri';
+}
+
+.container {
+    width: 65%;
+}
+
 #footer {
-    font-family: 'Track', 'Calibri', 'Arial';
+    font-family: 'Track', 'Arial', 'Calibri';
     font-size: 12px;
     margin: 0 auto;
     text-align: center;
