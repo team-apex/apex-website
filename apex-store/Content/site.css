@@ -1,0 +1,12 @@
+﻿
+@font-face {
+    font-family: 'Track';
+    src: url('../fonts/Track.otf') format('opentype');
+}
+
+#footer {
+    font-family: 'Track', 'Calibri', 'Arial';
+    font-size: 12px;
+    margin: 0 auto;
+    text-align: center;
+}
