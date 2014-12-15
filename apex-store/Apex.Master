@@ -40,8 +40,20 @@
             <li><a href="#">Equipment</a></li>
           </ul>
         </li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">My Apex</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About Us <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My Apex <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">My Apex</a></li>
+            <li><a href="#">My Cart</a></li>
+          </ul>
+        </li>
       </ul>
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
