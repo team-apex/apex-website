@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Arial'
+    font-family: 'Arial';
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13,7 +13,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 90%;
 }
 
 #footer {
@@ -21,9 +23,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 12px;
     margin: 0 auto;
     text-align: center;
+    bottom: 0px;
 }
 
-#content {
+.content {
     width: 60%;
     float: left;
     margin-left: -1px;
@@ -36,17 +39,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #map-canvas {
-    width: 300px;
-    height: 250px;
+    width: 325px;
+    height: 275px;
+    margin: 0 auto;
 }
 
 .thumbs {
     text-align: center;
 }
 .thumbs img{
-    width: 120px;
+    width: 150px;
     border: solid 2px #33CCFF;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 #store {
@@ -56,4 +60,30 @@ h1, h2, h3, h4, h5, h6 {
 #winning {
     float: right;
     margin-right: 5px;
+}
+
+#login, #register {
+    margin: 0 auto;
+    width: 40%;
+}
+
+.form-label {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    display: inline-block;
+    width: 140px;
+}
+
+.form {
+    float: right;
+    width: 100px;
+}
+
+.btn-form {
+    float: left;
+    font-family: 'Track', 'Arial', 'Calibri';
+}
+
+#rbnGender {
+    float: left;
 }

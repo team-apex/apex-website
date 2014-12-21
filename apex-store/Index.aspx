@@ -1,13 +1,18 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Apex.Master" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="apex_store.Index" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <!--styling-->
     <link href="Content/site.css" rel="stylesheet" />
     <link href="Content/jquery.bxslider.css" rel="stylesheet" />
+    <link href="Content/jquery.cookiebar.css" rel="stylesheet" />
+    <!--jquery-->
     <script src="Scripts/jquery.bxslider.min.js"></script>
+    <script src="Scripts/jquery.cookiebar.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div id="content">
+    <div class="content">
         <h4>Welcome to Apex Cycling</h4>
+        <asp:Label runat="server" ID="lblCounter"></asp:Label>
         <hr/>
             <ul class="bxslider">
                 <li>
@@ -33,6 +38,7 @@
             and if you have any queries don't hesitate to contact one of our dedicated team members.
         </p>
     </div>
+    <asp:Label runat="server" ID="lblCount"></asp:Label>
     <div id="side">
         <h5>Find Us</h5>
         <hr/>
@@ -80,5 +86,10 @@
         }
         google.maps.event.addDomListener(window, 'load', initialize);
 
+    </script>
+    <script>
+        $(document).ready(function() {
+            $.cookieBar();
+        });
     </script>
 </asp:Content>

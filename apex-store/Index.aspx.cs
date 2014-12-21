@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -11,6 +12,22 @@ namespace apex_store
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            #region Page Visits
+            int counter;
+
+            if (Request.Cookies["counter"] == null)
+            {
+                counter = 0;
+            }
+            else
+            {
+                counter = int.Parse(Request.Cookies["counter"].Value);
+            }
+            counter++;
+
+            Response.Cookies["counter"].Value = counter.ToString();
+            Response.Cookies["counter"].Expires = DateTime.Now.AddMonths(18);
+            #endregion
 
         }
     }

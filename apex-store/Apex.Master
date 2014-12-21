@@ -52,6 +52,7 @@
           <ul class="dropdown-menu" role="menu">
             <li><a href="#">My Apex</a></li>
             <li><a href="#">My Cart</a></li>
+            <li><a href="Login.aspx">Sign In</a></li>
           </ul>
         </li>
       </ul>
